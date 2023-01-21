@@ -8,16 +8,20 @@ import {ThemeProvider, createTheme} from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#111511',
-            light: "#3BDF01",
+            main: '#EBEBEB',
+            dark: '#002884',
+            light: "#B300B7",
         }
-    }
+    },
 });
 function NavBar() {
     return (
         <ThemeProvider theme={theme}>
-            <AppBar position="static">
-                <Toolbar>
+            <AppBar position="static" elevation={0}>
+                <Toolbar sx={{
+                    mx: 20,
+                    my: 3
+                }}>
                     <Box sx={{flexGrow:1}}>
                         <Button>
                             <Box
@@ -33,8 +37,8 @@ function NavBar() {
                         </Button>
                     </Box>
                     <Stack direction="row" spacing={2}>
-                        <Button color="inherit">The project</Button>
-                        <Button color="inherit">Archives</Button>
+                        <Button color="inherit" sx={{fontSize: 20, fontWeight: 'bold', }}>The project</Button>
+                        <Button color="inherit" sx={{fontSize: 20, fontWeight: 'bold'}}>Archives</Button>
                     </Stack>
                 </Toolbar>
             </AppBar>
