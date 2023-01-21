@@ -4,7 +4,6 @@ import Logo from "../elements/logo.png"
 import {Box, Stack} from "@mui/system";
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 
-
 const theme = createTheme({
     palette: {
         primary: {
@@ -23,7 +22,7 @@ function NavBar() {
                     my: 3
                 }}>
                     <Box sx={{flexGrow:1}}>
-                        <Button>
+                        <Button color="inherit" href="/">
                             <Box
                                 component="img"
                                 sx={{
