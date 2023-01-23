@@ -16,7 +16,7 @@ const theme = createTheme({
 function NavBar() {
     return (
         <ThemeProvider theme={theme}>
-            <AppBar position="static" elevation={0}>
+            <AppBar position="sticky" elevation={0}>
                 <Toolbar sx={{
                     mx: 20,
                     my: 3
@@ -36,8 +36,8 @@ function NavBar() {
                         </Button>
                     </Box>
                     <Stack direction="row" spacing={2}>
-                        <Button color="inherit" sx={{fontSize: 20, fontWeight: 'bold', }}>The project</Button>
-                        <Button color="inherit" sx={{fontSize: 20, fontWeight: 'bold'}}>Archives</Button>
+                        <Button href="/about" color="inherit" sx={{fontSize: 20, fontWeight: '900'}}>The project</Button>
+                        <Button href="/pe" color="inherit" sx={{fontSize: 20, fontWeight: '900'}}>Archives</Button>
                     </Stack>
                 </Toolbar>
             </AppBar>

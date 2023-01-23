@@ -1,12 +1,18 @@
-import './styles/App.css';
+import React from "react";
+import {BrowserRouter as Router} from "react-router-dom";
 import NavBar from "./component/NavBar";
+import AnimatedRoutes from "./component/AnimatedRoutes";
+import Footer from "./component/Footer";
 
-function App() {
+const App: React.FC = () => {
     return (
-        <>
-        <NavBar />
-        </>
+        <Router>
+            <NavBar />
+            <AnimatedRoutes />
+            <Footer />
+        </Router>
+
     );
-}
+};
 
 export default App;

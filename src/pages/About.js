@@ -1,10 +1,11 @@
 import * as React from 'react';
 
-function PastEdition() {
+function About() {
     return(
         <>
-            Past edition
+            ABOUT
         </>
     )
 }
-export default PastEdition
+
+export default About
