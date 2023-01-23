@@ -5,6 +5,11 @@ import {Box, Stack} from "@mui/system";
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 
 const theme = createTheme({
+    components:{
+      MuiAppBar:{
+          backdropFilter: "blur(30px)",
+      }
+    },
     palette: {
         primary: {
             main: '#EBEBEB',
@@ -19,7 +24,7 @@ function NavBar() {
             <AppBar position="sticky" elevation={0}>
                 <Toolbar sx={{
                     mx: 20,
-                    my: 3
+                    my: 3,
                 }}>
                     <Box sx={{flexGrow:1}}>
                         <Button color="inherit" href="/">

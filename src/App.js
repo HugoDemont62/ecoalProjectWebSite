@@ -11,7 +11,6 @@ const App: React.FC = () => {
             <AnimatedRoutes />
             <Footer />
         </Router>
-
     );
 };
 
