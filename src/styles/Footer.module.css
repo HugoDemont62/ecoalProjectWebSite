@@ -1,0 +1,34 @@
+.container {
+  background: #F900FF;
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin-top: 2rem;
+  padding-block: 5rem;
+  font-size: 120%;
+}
+.container h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+}
+.container a {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

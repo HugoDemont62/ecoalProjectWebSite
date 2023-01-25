@@ -4,19 +4,16 @@ import Home from "../pages/Home";
 import PastEdition from "../pages/PastEdition";
 import About from "../pages/About";
 
-import {AnimatePresence} from "framer-motion"
 
-function AnimatedRoutes() {
+function RoutesPath() {
     const location = useLocation();
     return (
-        <AnimatePresence>
             <Routes location={location} key={location.pathname}>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/pe' element={<PastEdition/>}/>
                 <Route path='/about' element={<About/>}/>
             </Routes>
-        </AnimatePresence>
     )
 }
 
-export default AnimatedRoutes
+export default RoutesPath
