@@ -5,6 +5,7 @@ import Hero from '../elements/hero.svg';
 import BullHero from '../elements/bullHero.svg';
 import scroll from '../elements/scroll.svg';
 import AvisData from "../data/avisData.js";
+import ArchiveData from "../data/archiveData";
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
 import HomeStyle from "../styles/Home.module.css"
@@ -66,23 +67,53 @@ function Home() {
                     }}>
                 </Box>
                 <Box>
-                    {/* Make a slider with the avis and Splide react with 3 avis per 3 avis and have all informations, date, picture avis and comment*/}
                     <div className={style.cards}>
-
+                        <h1>Archives from previous years</h1>
                         <Splide aria-label="Slider" options={
                             {
                                 type   : 'loop',
                                 autoplay: true,
                                 rewind: true,
-                                width: 1300,
-                                gap: '1rem'
+                                width: 1900,
+                                gap: '1rem',
+                                perPage: 2
                             }}>
-                            {AvisData.map((data, index) => (
+
+                            {ArchiveData.map((data, index) => (
                                 <SplideSlide>
                                     <div className={style.card}>
-                                        <img src={data.picture} alt={index}/>
-                                        <h1>{data.avis}</h1>
-                                        <p>{data.comment}</p>
+                                        <a href={"/pe/"+index}>
+                                            <img src={data.img} alt={index}/>
+                                        </a>
+                                    </div>
+                                </SplideSlide>
+                            ))}
+                        </Splide>
+                    </div>
+                    <div className={style.cards}>
+                            <h1>some reviews from students</h1>
+                        <Splide aria-label="Slider" options={
+                            {
+                                type   : 'loop',
+                                autoplay: true,
+                                rewind: true,
+                                width: 1400,
+                                gap: '1rem',
+                                perPage: 2
+                            }}>
+
+                            {AvisData.map((data, index) => (
+                                <SplideSlide>
+                                    <div className={style.avis}>
+                                        <div>
+                                            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                                            <img src={data.picture} alt={index}/>
+                                            <h2>{data.name}</h2>
+                                        </div>
+                                        <div>
+                                            <h2>{data.session}</h2>
+                                            <p>{data.comment}</p>
+                                        </div>
                                     </div>
                                 </SplideSlide>
                             ))}

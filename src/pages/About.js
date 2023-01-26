@@ -1,9 +1,10 @@
 import * as React from 'react';
 
 function About() {
+
     return(
         <>
-            ABOUT
+
         </>
     )
 }

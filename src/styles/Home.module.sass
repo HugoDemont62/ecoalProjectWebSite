@@ -3,18 +3,46 @@ img::selection
 *::selection:not(img)
   color: #EBEBEB
   background: rgba(249, 0, 255, 0.5)
+h1
+  text-transform: uppercase
 
 .cards
+  padding-block: 4rem
   width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
   & .card
     display: flex
     flex-direction: column
     align-items: center
     gap: 2rem
-    padding-block: 2rem
+    padding-block: 4rem
     img
       width: 800px
-      height: 500px
+      height: auto
+      border-radius: 5px
+    h1
+      color: #F900FF
+      font-size: 2rem
+      font-weight: 900
+
+
+
+  & .avis
+    background: rgb(132,0,144)
+    background: linear-gradient(141deg, rgba(132,0,144,1) 0%, rgba(158,53,161,0.9248074229691877) 53%, rgba(255,0,241,0.6699054621848739) 100%)
+    display: flex
+    gap: 2rem
+    width: 500px
+    border-radius: 20px
+    padding-inline: 3rem
+    padding-block: 1rem
+    margin: 3rem
+    img
+      width: 200px
+      height: 300px
       border-radius: 5px
     h1
       color: #F900FF

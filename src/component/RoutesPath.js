@@ -4,13 +4,12 @@ import Home from "../pages/Home";
 import PastEdition from "../pages/PastEdition";
 import About from "../pages/About";
 
-
 function RoutesPath() {
     const location = useLocation();
     return (
             <Routes location={location} key={location.pathname}>
                 <Route path='/' element={<Home/>}/>
-                <Route path='/pe' element={<PastEdition/>}/>
+                <Route path='/pe/:id' element={<PastEdition />}/>
                 <Route path='/about' element={<About/>}/>
             </Routes>
     )
