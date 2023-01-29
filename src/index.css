@@ -6,6 +6,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+img::selection{
+  color: transparent;
+}
+
+*::selection:not(img){
+  color: #EBEBEB;
+  background: rgba(249, 0, 255, 0.5);
+}
+
+h1{
+  text-transform: uppercase;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

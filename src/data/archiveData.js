@@ -1,4 +1,7 @@
-import Lepremier from "../elements/archiveImg2019.svg";
+import Lepremier from "../elements/archiveImg2019.png";
+import Ledeuxieme from "../elements/archiveImg2022.png";
+import Letroisieme from "../elements/archiveImg2023.png";
+
 
 const ArchiveData = [{
     "incre": "0",
@@ -9,13 +12,13 @@ const ArchiveData = [{
 }, {
     "incre": "1",
     "date": "2022",
-    "img": Lepremier,
+    "img": Ledeuxieme,
     "desc": "lorem lorem lorem lorem lorem lorem lorem lorem ",
     "picture": ["url1", "url2"]
 }, {
     "incre": "2",
     "date": "2023",
-    "img": Lepremier,
+    "img": Letroisieme,
     "desc": "lorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem loremlorem lorem lorem lorem lorem lorem lorem lorem ",
     "picture": ["url1", "url2"]
 }]

@@ -11,8 +11,8 @@ h1
   width: 100%
   display: flex
   flex-direction: column
-  justify-content: center
-  align-items: center
+  align-items: start
+
   & .card
     display: flex
     flex-direction: column
@@ -20,7 +20,7 @@ h1
     gap: 2rem
     padding-block: 4rem
     img
-      width: 800px
+      width: 1000px
       height: auto
       border-radius: 5px
     h1
@@ -31,8 +31,7 @@ h1
 
 
   & .avis
-    background: rgb(132,0,144)
-    background: linear-gradient(141deg, rgba(132,0,144,1) 0%, rgba(158,53,161,0.9248074229691877) 53%, rgba(255,0,241,0.6699054621848739) 100%)
+    background: #D6D6D6
     display: flex
     gap: 2rem
     width: 500px
@@ -40,6 +39,7 @@ h1
     padding-inline: 3rem
     padding-block: 1rem
     margin: 3rem
+    box-shadow: 3px 5px 6px -3px #202020
     img
       width: 200px
       height: 300px
@@ -48,3 +48,20 @@ h1
       color: #F900FF
       font-size: 2rem
       font-weight: 900
+
+
+
+.headerTitle
+  position: relative
+  font-family: 'Inter', sans-serif
+  font-style: italic
+  font-size: 1.5rem
+  & .bulle
+    z-index: -1
+    top: 0
+    left: -50px
+    width: 100px
+    height: 100px
+    border-radius: 100px
+    background:  radial-gradient(100.29% 65.82% at 67.37% 66.22%, #B300B7 0%, #F900FF 100%)
+    position: absolute

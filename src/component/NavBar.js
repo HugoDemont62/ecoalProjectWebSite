@@ -36,8 +36,8 @@ function NavBar() {
                         </Button>
                     </Box>
                     <Stack direction="row" spacing={2}>
-                        <Button href="/about" color="inherit" sx={{fontSize: 20, fontWeight: '900'}}>The project</Button>
-                        <Button href="/pe" color="inherit" sx={{fontSize: 20, fontWeight: '900'}}>Archives</Button>
+                        <Button href="/about" color="inherit" sx={{fontSize: 20,fontFamily: "Inter", fontWeight: '1000'}}>The project</Button>
+                        <Button href="/pe" color="inherit" sx={{fontSize: 20,fontFamily: "Inter", fontWeight: '1000'}}>Archives</Button>
                     </Stack>
                 </Toolbar>
             </AppBar>
