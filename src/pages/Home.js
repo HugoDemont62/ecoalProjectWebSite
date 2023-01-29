@@ -1,10 +1,9 @@
 import * as React from 'react';
 import {Box} from "@mui/system";
 import {Grid, Typography} from "@mui/material";
-import Hero from '../elements/hero.svg';
-import BullHero from '../elements/bullHero.svg';
-import scroll from '../elements/scroll.svg';
-import AvisData from "../data/avisData.js";
+import Hero from '../elements/Vidéo.png';
+import BullHero from '../elements/Sans titre - 1.png';
+    import AvisData from "../data/avisData.js";
 import ArchiveData from "../data/archiveData";
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
@@ -31,7 +30,8 @@ function Home() {
                         sx={{
                             mr: -20,
                             maxHeight: 400,
-                            maxWidth: 1000,
+                            maxWidth: 400,
+                            objectFit: 'contain',
                             flexGrow: 1
                         }}>
                     </Box>
@@ -48,24 +48,15 @@ function Home() {
                         alt="Hero"
                         src={Hero}
                         sx={{
-                            maxHeight: 1000,
+                            m: 2,
+                            maxHeight: 800,
                             maxWidth: 1000,
+                            objectFit: 'contain',
                             flexGrow: 1
                         }}>
                     </Box>
 
                 </Grid>
-                <Box
-                    component="img"
-                    alt="scroll"
-                    src={scroll}
-                    sx={{
-                        mt: -22,
-                        maxHeight: 150,
-                        maxWidth: 1000,
-                        flexGrow: 1
-                    }}>
-                </Box>
                 <Box>
                     <div className={style.cards}>
                         <h1>Archives from previous years</h1>
@@ -74,9 +65,8 @@ function Home() {
                                 type   : 'loop',
                                 autoplay: true,
                                 rewind: true,
-                                width: 1900,
-                                gap: '1rem',
-                                perPage: 2
+                                width: 1400,
+                                perPage: 1
                             }}>
 
                             {ArchiveData.map((data, index) => (
@@ -99,8 +89,8 @@ function Home() {
                                 rewind: true,
                                 width: 1400,
                                 gap: '1rem',
-                                perPage: 2
-                            }}>
+                                perPage: 2,
+                                }}>
 
                             {AvisData.map((data, index) => (
                                 <SplideSlide>
